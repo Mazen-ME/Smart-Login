@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid  vh-100 ">
+            <div class="row ">
+                <div class="col-md-6  mx-auto mt-5 rounded-1 px-5">
+                    <div class="in text-center">
+                        <h1 class="my-4">
+                            Smart Login System
+                        </h1>
+                        <input oninput="validateName()" id="nameUp" type="text" class="form-control  border-1 border-light focus bg-transparent my-4"
+                            placeholder="Enter your name">
+                        <p class="text-danger d-none" id="nameAlert">at least 3 letters</p>    
+                        <input oninput="validateemail()" id="emailUp" type="text"
+                            class="form-control  border-1 border-light focus bg-transparent my-4"
+                            placeholder="Enter your e-mail">
+                        <p class="text-danger d-none" id="emailAlert">name@example.com</p>
+                        <input oninput="validatePass()" id="passwordUp" type="password"
+                            class="form-control border-1 border-light bg-transparent focus my-4"
+                            placeholder="Enter your password">
+                        <p class="text-danger d-none" id="passwordAlert">must be from 5 to 15 letters or numberss</p>
+
+                        <p class="text-success fs-5 d-none" id="confirmMsg">Sucess</p>
+                        <p class="text-danger fs-5 d-none" id="existMsg">this email already exist</p>
+                        <p class="text-danger fs-5 d-none" id="failMsg">Failed to signUp try again</p>
+                        <button id="btnSignup" onclick="signUp()" class="my-3 bt btns form-control">SignUp</button>
+                        <h6 class=" my-3 mb-5">You have an account? <a class="a text-decoration-none" 
+                                href="index.html">SignIn</a></h6>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/Jquery.c.js"></script>
+    <script src="js/registeration.js "></script>
+</body>
+
+</html>

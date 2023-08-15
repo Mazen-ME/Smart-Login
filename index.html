@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container-fluid  vh-100 ">
+            <div class="row ">
+                <div class="col-md-6  mx-auto mt-5 rounded-1 px-5">
+                    <div class="in text-center" >
+                        <h1 class="my-4">
+                            Smart Login System
+                        </h1>
+                        <input id="emailIn" type="text" class="form-control  border-1 border-light focus bg-transparent my-4" placeholder="Enter your e-mail">
+                        <input id="passwordIn" type="password" class="form-control border-1 border-light bg-transparent focus my-4" placeholder="Enter your password">
+                        <p class="text-danger d-none" id="fillMsg">All fields are required</p>
+                        <p class="text-danger d-none" id="errorMsg">Your email or password not correct</p>
+                        <a id="btnLogin" onclick="logIn()" class="my-3 bt btns form-control">Login</a>
+                        <h6 class=" my-3 mb-5">Don’t have an account? <a class="a text-decoration-none " href="signUp.html">SignUp</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/Jquery.c.js"></script>
+    <script src="js/registeration.js "></script>
+</body>
+</html>
